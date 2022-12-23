@@ -16,8 +16,8 @@ func main() {
 	db := database.Connect()
 	defer db.Close()
 
-	_, err := db.Exec(`
-	
+	/* _, err := db.Exec(`
+
 	CREATE TABLE IF NOT EXISTS users(
 		id SERIAL PRIMARY KEY,
 		name TEXT,
@@ -26,7 +26,7 @@ func main() {
 
 	if err != nil {
 		panic(err)
-	}
+	} */
 
 	route := chi.NewRouter()
 
