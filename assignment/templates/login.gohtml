@@ -4,8 +4,8 @@
     </head>
     <body>
         <h3>Login</h3>
-
-        <form method="post" action="/account/login">
+        {{.err}}
+        <form method="post" action="/login">
              Username <input type="text" name="username" />
              <br />
              Password <input type="text" name="password" />
